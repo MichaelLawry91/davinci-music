@@ -1,8 +1,6 @@
 {
-  ...
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev"
   }
-  ...
 }
