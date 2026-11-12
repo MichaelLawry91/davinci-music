@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html data-theme="system" lang="en">
+<head>
+
+<title>Terms of Use — DaVinci Music Group</title>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+/* Inline Midnight JET theme — no external .css */
+
+:root{ --jet-900:#030712; --jet-800:#060D1F; --jet-700:#0A1931; --jet-600:#132A4E; --jet-500:#1A365D; --jet-400:#2A4A7F; --text:#E8EEF8; --muted:rgba(232,238,248,0.65); --card:#0A1931; --card2:#132A4E; --border:rgba(42,74,127,0.4); --accent:#7FB1FF; }
+[data-theme="light"]{ --jet-900:#F5F1E8; --jet-800:#FFFFFF; --jet-700:#FDFCF7; --jet-600:#E8EEF8; --jet-500:#D6E4FF; --jet-400:#2A4A7F; --text:#060D1F; --muted:rgba(6,13,31,0.65); --card:#FFFFFF; --card2:#F5F1E8; --border:rgba(19,42,78,0.2); --accent:#132A4E; }
+[data-theme="mid"]{ --jet-900:#0A1931; --jet-800:#132A4E; --jet-700:#1A365D; --jet-600:#2A4A7F; --jet-500:#3B6CB8; --jet-400:#7FB1FF; --text:#E8EEF8; --muted:rgba(232,238,248,0.75); --card:#1A365D; --card2:#2A4A7F; --border:rgba(127,177,255,0.4); --accent:#A8C4FF; }
+@media (prefers-color-scheme: light){ [data-theme="system"]{ --jet-900:#F5F1E8; --jet-800:#FFFFFF; --jet-700:#FDFCF7; --jet-600:#E8EEF8; --jet-500:#D6E4FF; --jet-400:#2A4A7F; --text:#060D1F; --muted:rgba(6,13,31,0.65); --card:#FFFFFF; --card2:#F5F1E8; --border:rgba(19,42,78,0.2); --accent:#132A4E; } }
+*{margin:0;padding:0;box-sizing:border-box}
+html{ font-family:'CashMarket',"Helvetica Neue",Helvetica,sans-serif; }
+body{ background:linear-gradient(180deg,var(--jet-800),var(--jet-900)); color:var(--text); min-height:100vh; font-family:'CashMarket',"Helvetica Neue",Helvetica,sans-serif; }
+a{color:var(--accent); text-decoration:none}
+.announce{ background:linear-gradient(90deg,var(--jet-900),var(--jet-700),var(--jet-600)); border-bottom:1px solid var(--border); display:flex; flex-wrap:wrap; justify-content:center; gap:24px; padding:12px 16px; font-size:13px; letter-spacing:0.06em; }
+.announce b{color:var(--accent)} .announce a{color:var(--text); border-bottom:1px dashed var(--border)}
+header{ position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--jet-800) 85%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+.header-inner{ max-width:1240px; margin:0 auto; padding:0 16px; height:68px; display:flex; align-items:center; gap:12px; }
+.hamburger{ width:44px; height:44px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text); font-size:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.theme-toggle{ display:flex; align-items:center; gap:8px; border:1px solid var(--border); background:var(--card); color:var(--text); padding:8px 12px; border-radius:999px; cursor:pointer; font-family:inherit; font-weight:700; font-size:12px; letter-spacing:0.08em; }
+.theme-toggle .dot{ width:10px; height:10px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); }
+.logo{ display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:0.04em; }
+.logo img{ width:36px; height:36px; border-radius:8px; object-fit:cover; }
+.nav-actions{ margin-left:auto; display:flex; gap:8px; }
+.btn{ border:1px solid var(--border); background:var(--card); color:var(--text); padding:9px 14px; border-radius:999px; font-family:inherit; font-weight:700; font-size:13px; cursor:pointer; }
+.btn-primary{ background:linear-gradient(180deg,#E8EEF8,#A8C4FF); color:#060D1F; border:none; }
+.dropdown{ position:relative; }
+.dropdown-menu{ display:none; position:absolute; top:52px; left:0; width:300px; background:var(--card); border:1px solid var(--border); border-radius:14px; box-shadow:0 20px 40px rgba(0,0,0,0.4); padding:10px; }
+.dropdown-menu.open{ display:block; }
+.dropdown-menu a{ display:flex; justify-content:space-between; padding:10px 12px; border-radius:10px; color:var(--text); }
+.dropdown-menu a:hover{ background:var(--card2); }
+.dropdown-menu .sec{ font-size:11px; letter-spacing:0.18em; color:var(--muted); padding:10px 12px 4px; }
+main{ max-width:1240px; margin:0 auto; padding:28px 16px 60px; }
+.hero{ text-align:center; padding:36px 16px 24px; }
+.hero h1{ font-size:clamp(32px,6vw,58px); line-height:0.95; letter-spacing:-0.02em; }
+.hero p{ color:var(--muted); margin-top:12px; max-width:640px; margin-left:auto; margin-right:auto; line-height:1.5; }
+.wood{ background:linear-gradient(180deg,#4E342E,#5D4037 20%,#795548 40%,#8D6E63 55%,#4E342E); padding:16px; border-radius:6px; box-shadow:0 16px 36px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.15); }
+.mat{ background:#FDFCF7; padding:6px; border-radius:3px; }
+.inner{ background:var(--jet-700); border:1px solid var(--border); padding:20px; border-radius:2px; }
+.grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:24px; margin-top:24px; }
+.card h3{ font-size:18px; margin-bottom:6px; } .card p{ font-size:13px; color:var(--muted); line-height:1.5; }
+.pill{ display:inline-flex; padding:5px 10px; border-radius:999px; border:1px solid var(--border); background:var(--card); font-size:11px; font-weight:700; letter-spacing:0.08em; }
+footer{ border-top:1px solid var(--border); padding:28px 16px; text-align:center; font-size:12px; color:var(--muted); }
+footer a{ margin:0 8px; }
+.tree{ font-family:inherit; font-size:13px; line-height:1.7; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px; }
+input,select,textarea{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:var(--jet-800); color:var(--text); font-family:inherit; margin-top:6px; }
+label{ font-size:12px; font-weight:700; letter-spacing:0.08em; }
+@media(max-width:640px){ .announce{flex-direction:column; gap:4px; text-align:center} .nav-actions .hide-m{display:none} }
+
+</style>
+</head>
+<body>
+<div class="announce"><div><b>DEMOS:</b> <a href="mailto:demos@davincimusicgroup.com">demos@davincimusicgroup.com</a></div><div>•</div><div><b>COLLABS:</b> <a href="mailto:lavinci@davincimusicgroup.com">lavinci@davincimusicgroup.com</a></div></div>
+<header><div class="header-inner">
+<div class="dropdown">
+<button aria-label="Menu" class="hamburger" onclick="toggleMenu()">☰</button>
+<div class="dropdown-menu" id="hamburgerMenu">
+<div class="sec">NAVIGATION</div>
+<a href="/index.html"><span>🏠 Homepage</span><span>→</span></a>
+<a href="/Homepage.html"><span>✨ Homepage (Gallery)</span><span>→</span></a>
+<a href="/settings.html"><span>⚙️ Settings</span><span>→</span></a>
+<div class="sec">CREATOR STUDIO</div>
+<a href="/creator-studio/subscribe.html"><span>Subscribe</span><span>→</span></a>
+<a href="/creator-studio/upload-ipfs.html"><span>Upload to IPFS</span><span>→</span></a>
+<a href="/creator-studio/edit-catalog.html"><span>Edit Catalog</span><span>→</span></a>
+<div class="sec">MARKETPLACE</div>
+<a href="/marketplace/audio-vault/"><span>Audio Vault</span><span>→</span></a>
+<a href="/marketplace/video-vault/"><span>Video Vault</span><span>→</span></a>
+<a href="/marketplace/gallery/"><span>Gallery</span><span>→</span></a>
+<div class="sec">ACCOUNT</div>
+<a href="/auth-wallet/"><span>Connect Wallet</span><span>→</span></a>
+<a href="/analytics-engine/"><span>Analytics &amp; DVX</span><span>→</span></a>
+<div class="sec">LEGAL</div>
+<a href="/privacy.html"><span>Privacy Policy</span><span>→</span></a>
+<a href="/terms.html"><span>Terms of Use</span><span>→</span></a>
+<a href="/copyright.html"><span>Copyright / DMCA</span><span>→</span></a>
+</div>
+</div>
+<button class="theme-toggle" onclick="cycleTheme()"><span id="themeIcon">💻</span><span id="themeLabel">SYSTEM (DEFAULT)</span><span>↻</span></button>
+<div class="logo"><img alt="DaVinci Music Group logo" src="/assets/logo.svgogo.svg"/><span>DaVinci Music Group</span></div>
+<div class="nav-actions">
+<button class="btn" onclick="openAuth('login')">Log In</button>
+<button class="btn" onclick="openAuth('signup')">Sign Up</button>
+<button class="btn btn-primary" onclick="openWallet()">Connect</button>
+</div>
+</div></header>
+<main>
+<div class="hero"><div class="pill">DAVINCI MUSIC GROUP • DAVINCIMUSIC.IO</div><h1 style="margin-top:14px">Terms of Use</h1><p>Effective Date: November 9, 2026 — davincimusic.io — Subscription, DVX, royalty, and marketplace rules.</p></div>
+<div class="wood"><div class="mat"><div class="inner">
+<p><b>Effective Date:</b> November 9, 2026<br/><b>Website:</b> davincimusic.io</p>
+<p>Welcome to davincimusic.io (the "Platform," "Company," "we," "us," or "our"). These Terms of Use ("Terms") govern your access to and use of our website, services, marketplace, smart contracts, and associated technologies.</p>
+<p>By registering an account, uploading Content, minting tokens, buying, selling, or otherwise interacting with the Platform, you ("User," "Client," "Creator," or "Subscriber") agree to be bound by these Terms. If you do not agree, do not use the Platform.</p>
+<h2 style="margin-top:20px">1. Description of the Marketplace &amp; Platform Services</h2><p>davincimusic.io operates a digital marketplace for fungible and non-fungible digital assets. The Platform enables Subscribers to upload audio, video, and image files ("User Content") to create decentralized IPFS URIs and tokenized representations.</p>
+<h2>2. Uploads, IPFS Storage, &amp; Minting</h2><p><b>IPFS URI Creation:</b> When you upload files, davincimusic.io generates an IPFS hash/URI to pin and store the file. Data on IPFS is public, decentralized, and immutable.</p><p><b>DVX Rewards:</b> davincimusic.io will automatically issue and mint 1 DVX token to the Client's connected account/wallet for every verifiable stream, click, or view. Minting rules and verification remain at the sole discretion of the Platform.</p>
+<h2>3. Royalty &amp; Publishing Ownership Agreement</h2><p><b>50% Total Royalty Assignment:</b> Upon upload and URI generation, davincimusic.io legally owns 50% of all total gross royalties across all platforms, sales, streams, licenses, and secondary sales.</p><p><b>100% Publishing Royalties:</b> You irrevocably assign 100% of publishing rights and royalties to davincimusic.io (and designated publisher entities).</p><p><b>Writers' Share:</b> Remaining 50% of master/creator royalties distributed per account payout structure.</p>
+<div style="border:1px solid var(--border);background:var(--card2);padding:14px;border-radius:12px;margin:14px 0"><b>SUBSCRIPTION &amp; PURCHASE RULES:</b> Purchasing a subscription with DaVinci Music ™ means you agree to recurring billing until cancelled, no refunds for DVX already minted, royalty assignment in §3 applies to all uploads during subscription, subscription does not transfer ownership of the Platform, you are responsible for gas/network fees, termination forfeits future minting but does not reverse prior IPFS/royalty assignments.</div>
+<h2>4. User Warranties &amp; Content Ownership</h2><p>You are sole owner/licensee, content does not infringe third-party rights, you have authority to grant 50%/100% assignments, you will not use bots / click farms to inflate streams.</p>
+<h2>5. Token &amp; Blockchain Risks</h2><p>Transactions are irreversible. DVX are utility tokens, not equity/debt/securities. No guarantee of value/liquidity. Users pay gas/network fees.</p>
+<h2>6. Prohibited Conduct</h2><p>No stolen/infringing/unlawful/defamatory/fraudulent content. No wash trading / artificial volume. No bypassing security, reverse-engineering contracts, or interfering with IPFS pinning.</p>
+<h2>7. Limitation of Liability &amp; Indemnification</h2><p>To maximum extent permitted by law, davincimusic.io is not liable for indirect/incidental/consequential damages, loss of profits, token value, or data loss. You indemnify davincimusic.io for breach, unauthorized uploads, or infringement.</p>
+<h2>8. Modifications &amp; Governing Law</h2><p>davincimusic.io may modify Terms at any time. Continued use = acceptance. Governed by laws of applicable jurisdiction.</p>
+<p><b>Contact:</b> Support Team: <a href="mailto:support@davincimusicgroup.com">support@davincimusicgroup.com</a></p>
+</div></div></div>
+</main>
+<footer>
+<div><a href="https://davincimusic.io/privacy.html">Privacy Policy</a> • <a href="https://davincimusic.io/terms.html">Terms of Use</a> • <a href="https://davincimusic.io/copyright.html">Copyright / DMCA</a></div>
+<div style="margin-top:10px">© 2026 DaVinci Music Group LLC / davincimusic.io — Midnight JET Blue Gallery</div>
+</footer>
+<script>
+/* Inline theme + hamburger + auth — no external .js */
+
+function getTheme(){ return localStorage.getItem('davinci-theme') || 'system'; }
+function applyTheme(t){ document.documentElement.setAttribute('data-theme', t); localStorage.setItem('davinci-theme', t); const label=document.getElementById('themeLabel'); if(label) label.textContent = t.toUpperCase() + (t==='system' ? ' (DEFAULT)' : ''); const icon=document.getElementById('themeIcon'); if(icon) icon.textContent = t==='light' ? '☀️' : t==='mid' ? '🌤️' : t==='dark' ? '🌙' : '💻'; }
+function cycleTheme(){ const order=['system','light','mid','dark']; const cur=getTheme(); const next=order[(order.indexOf(cur)+1)%order.length]; applyTheme(next); }
+function toggleMenu(){ document.getElementById('hamburgerMenu')?.classList.toggle('open'); }
+document.addEventListener('DOMContentLoaded', ()=>{ applyTheme(getTheme()); document.addEventListener('click', (e)=>{ const dd=document.querySelector('.dropdown'); if(dd && !dd.contains(e.target)) document.getElementById('hamburgerMenu')?.classList.remove('open'); }); });
+
+function openAuth(mode){ alert(mode==='signup' ? 'Sign Up — Create your davincimusic.io account (Username, Email, Password via Supabase Auth)' : 'Log In — Welcome back to davincimusic.io'); }
+function openWallet(){ alert('Connect Wallet — MetaMask / WalletConnect / Ledger — only your public address is shared with davincimusic.io'); }
+
+</script>
+</body>
+</html>
