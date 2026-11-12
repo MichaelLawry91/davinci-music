@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+
+<html data-theme="system" lang="en">
+<head>
+<title>Connect Wallet — DaVinci Music Group</title>
+<link href="/assets/logo.svgogo.svg" rel="icon" type="image/svg+xml"/>
+<style>
+/* Inline Midnight JET theme — no external .css */
 
 :root{ --jet-900:#030712; --jet-800:#060D1F; --jet-700:#0A1931; --jet-600:#132A4E; --jet-500:#1A365D; --jet-400:#2A4A7F; --text:#E8EEF8; --muted:rgba(232,238,248,0.65); --card:#0A1931; --card2:#132A4E; --border:rgba(42,74,127,0.4); --accent:#7FB1FF; }
 [data-theme="light"]{ --jet-900:#F5F1E8; --jet-800:#FFFFFF; --jet-700:#FDFCF7; --jet-600:#E8EEF8; --jet-500:#D6E4FF; --jet-400:#2A4A7F; --text:#060D1F; --muted:rgba(6,13,31,0.65); --card:#FFFFFF; --card2:#F5F1E8; --border:rgba(19,42,78,0.2); --accent:#132A4E; }
@@ -41,3 +49,73 @@ footer a{ margin:0 8px; }
 input,select,textarea{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:var(--jet-800); color:var(--text); font-family:inherit; margin-top:6px; }
 label{ font-size:12px; font-weight:700; letter-spacing:0.08em; }
 @media(max-width:640px){ .announce{flex-direction:column; gap:4px; text-align:center} .nav-actions .hide-m{display:none} }
+
+</style>
+</head>
+<body>
+<div class="announce"><div><b>DEMOS:</b> <a href="mailto:demos@davincimusicgroup.com">demos@davincimusicgroup.com</a></div><div>•</div><div><b>COLLABS:</b> <a href="mailto:lavinci@davincimusicgroup.com">lavinci@davincimusicgroup.com</a></div></div>
+<header><div class="header-inner">
+<div class="dropdown">
+<button aria-label="Menu" class="hamburger" onclick="toggleMenu()">☰</button>
+<div class="dropdown-menu" id="hamburgerMenu">
+<div class="sec">NAVIGATION</div>
+<a href="/index.html"><span>🏠 Homepage</span><span>→</span></a>
+<a href="/Homepage.html"><span>✨ Homepage (Gallery)</span><span>→</span></a>
+<a href="/settings.html"><span>⚙️ Settings</span><span>→</span></a>
+<div class="sec">CREATOR STUDIO</div>
+<a href="/creator-studio/subscribe.html"><span>Subscribe</span><span>→</span></a>
+<a href="/creator-studio/upload-ipfs.html"><span>Upload to IPFS</span><span>→</span></a>
+<a href="/creator-studio/edit-catalog.html"><span>Edit Catalog</span><span>→</span></a>
+<div class="sec">MARKETPLACE</div>
+<a href="/marketplace/audio-vault/"><span>Audio Vault</span><span>→</span></a>
+<a href="/marketplace/video-vault/"><span>Video Vault</span><span>→</span></a>
+<a href="/marketplace/gallery/"><span>Gallery</span><span>→</span></a>
+<div class="sec">ACCOUNT</div>
+<a href="/auth-wallet/"><span>Connect Wallet</span><span>→</span></a>
+<a href="/analytics-engine/"><span>Analytics &amp; DVX</span><span>→</span></a>
+<div class="sec">LEGAL</div>
+<a href="/privacy.html"><span>Privacy Policy</span><span>→</span></a>
+<a href="/terms.html"><span>Terms of Use</span><span>→</span></a>
+<a href="/copyright.html"><span>Copyright / DMCA</span><span>→</span></a>
+</div>
+</div>
+<button class="theme-toggle" onclick="cycleTheme()"><span id="themeIcon">💻</span><span id="themeLabel">SYSTEM (DEFAULT)</span><span>↻</span></button>
+<div class="logo"><img alt="DaVinci Music Group logo" src="/assets/logo.svgogo.svg"/><span>DaVinci Music Group</span></div>
+<div class="nav-actions">
+<button class="btn" onclick="openAuth('login')">Log In</button>
+<button class="btn" onclick="openAuth('signup')">Sign Up</button>
+<button class="btn btn-primary" onclick="openWallet()">Connect</button>
+</div>
+</div></header>
+<main>
+<div class="hero"><div class="pill">DAVINCI MUSIC GROUP • DAVINCIMUSIC.IO</div><h1 style="margin-top:14px">Auth Wallet — Connect</h1><p>Connect MetaMask ™ / WalletConnect / Ledger. Your public address is shared with davincimusic.io for DVX and royalty payouts. connect.js + signature.js</p></div>
+<div class="wood"><div class="mat"><div class="inner" style="text-align:center">
+<h2>Connect Your Wallet</h2>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px">
+<button class="btn btn-primary">🦊 Connect MetaMask</button>
+<button class="btn"> Connect via WalletConnect </button>
+<button class="btn"> Connect Ledger </button>
+</div>
+<p style="color:var(--muted);margin-top:12px;font-size:12px">Never share your seed phrase. Only your public address is requested (eth_requestAccounts).</p>
+<div style="margin-top:16px;text-align:left"><label>Connected Address</label><input placeholder="0x... will appear after connect"/></div>
+</div></div></div>
+</main>
+<footer>
+<div><a href="https://davincimusic.io/privacy.html">Privacy Policy</a> • <a href="https://davincimusic.io/terms.html">Terms of Use</a> • <a href="https://davincimusic.io/copyright.html">Copyright / DMCA</a></div>
+<div style="margin-top:10px">© 2026 DaVinci Music Group LLC / davincimusic.io — Midnight JET Blue Gallery</div>
+</footer>
+<script>
+/* Inline theme + hamburger + auth — no external .js */
+
+function getTheme(){ return localStorage.getItem('davinci-theme') || 'system'; }
+function applyTheme(t){ document.documentElement.setAttribute('data-theme', t); localStorage.setItem('davinci-theme', t); const label=document.getElementById('themeLabel'); if(label) label.textContent = t.toUpperCase() + (t==='system' ? ' (DEFAULT)' : ''); const icon=document.getElementById('themeIcon'); if(icon) icon.textContent = t==='light' ? '☀️' : t==='mid' ? '🌤️' : t==='dark' ? '🌙' : '💻'; }
+function cycleTheme(){ const order=['system','light','mid','dark']; const cur=getTheme(); const next=order[(order.indexOf(cur)+1)%order.length]; applyTheme(next); }
+function toggleMenu(){ document.getElementById('hamburgerMenu')?.classList.toggle('open'); }
+document.addEventListener('DOMContentLoaded', ()=>{ applyTheme(getTheme()); document.addEventListener('click', (e)=>{ const dd=document.querySelector('.dropdown'); if(dd && !dd.contains(e.target)) document.getElementById('hamburgerMenu')?.classList.remove('open'); }); });
+
+function openAuth(mode){ alert(mode==='signup' ? 'Sign Up — Create your davincimusic.io account (Username, Email, Password via Supabase Auth)' : 'Log In — Welcome back to davincimusic.io'); }
+function openWallet(){ alert('Connect Wallet — MetaMask / WalletConnect / Ledger — only your public address is shared with davincimusic.io'); }
+
+</script>
+</body>
+</html>
