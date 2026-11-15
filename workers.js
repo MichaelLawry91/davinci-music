@@ -5,8 +5,7 @@ export default {
     //EDIT IN APIs
     if (url.pathname === "/api/status") {
       return new Response(JSON.stringify)({ online: true}), 
-      { headers: { "Content-Type": "application/json" }, 
-      };
+      { headers: { "Content-Type": "application/json" } }
     }
     return env.ASSETS.fetch(request);
 };
