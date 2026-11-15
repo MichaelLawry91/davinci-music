@@ -8,8 +8,5 @@ export default {
         headers: { "Content-Type": "application/json" }, 
       });
     }
-
-
-    console.info({ message: 'Hello World Worker received a request!' }); 
     return env.ASSETS.fetch(request);
 };
