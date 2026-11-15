@@ -8,4 +8,4 @@ export default {
       { headers: { "Content-Type": "application/json" } }
     }
     return env.ASSETS.fetch(request);
-};
+}
