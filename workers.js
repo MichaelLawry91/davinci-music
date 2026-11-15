@@ -7,5 +7,6 @@ export default {
       return new Response(JSON.stringify)({ online: true}), 
       { headers: { "Content-Type": "application/json" } }
     }
-    return env.ASSETS.fetch(request);
+  return env.ASSETS.fetch(request);
+  }
 }
